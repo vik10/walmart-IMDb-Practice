@@ -1,0 +1,172 @@
+.posterCont {
+  padding: 0 3em;
+}
+.pointer {
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+}
+.header form li {
+  cursor: pointer;
+}
+.mainContainer {
+  background-image: linear-gradient(220deg, gray, black, black) !important;
+  padding-bottom: 3em !important;
+}
+.Card {
+  flex-basis: 25%;
+}
+.Card img {
+  width: 100%;
+  height: 250px !important;
+  border-radius: 0.25em 0.25em 0 0;
+}
+
+.cardContainer {
+  overflow-x: scroll;
+}
+.Card .title {
+  height: 2.5em;
+}
+.productCont .poster {
+  height: 130px;
+  background-image: linear-gradient(165deg, black, #1a1a1a, #1a0000);
+}
+.productCont {
+  background-image: linear-gradient(135deg, black, #1f1f2e, #330000);
+}
+.photoNvdo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+.photoNvdo div {
+  background-color: #4d4d4d;
+  display: grid;
+  place-items: center;
+}
+.sortFilterbox {
+  margin: 0 -17px;
+}
+.dropdown {
+  width: 250px !important;
+  background-color: #595959;
+  transition: all 0.6s ease-in;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+}
+.show .dropdown {
+  /* transform: translateX(0); */
+  transform: skewY(180deg);
+  opacity: 1;
+  z-index: 2;
+}
+.hide .dropdown {
+  /* transform: translateX(-100%); */
+  opacity: 0;
+  z-index: -1;
+}
+.dropdown a {
+  color: white;
+}
+
+.dropdown li:hover {
+  color: lightsalmon !important;
+}
+.dropdown .crossBox {
+  background-image: repeating-linear-gradient(45deg, #a6a6a6, #bfbfbf 7px);
+}
+.selectedBtn {
+  color: goldenrod !important;
+}
+.registerCont {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.registerbox {
+  width: 400px;
+}
+.registeShow .registerCont {
+  z-index: 3;
+  opacity: 1;
+}
+.userDropdown {
+  width: 240px;
+  position: absolute;
+  background: #4d4d4d;
+  top: 54px;
+  right: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.userDropdownshow .userDropdown {
+  /* transform: translateX(0); */
+  display: block;
+}
+.userDropdownhide .userDropdown {
+  /* transform: translateX(100%); */
+  display: none;
+}
+
+.watchlistCardCont {
+  max-width: 900px !important;
+}
+.watchlistCont select {
+  border-radius: 0.3rem;
+  outline: none;
+}
+.addBtn {
+  width: 28px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+.addBtn :hover {
+  color: orangered;
+}
+.gridChng .watchlistCardCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.gridChng .cardfilter {
+  flex-direction: column;
+}
+.gridChng .cardfilter img {
+  width: 100%;
+  flex-basis: 60% !important;
+}
+.picCont {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (min-width: 900px) {
+  .header {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+  video {
+    width: 900px;
+  }
+  .posterCont {
+    padding: 6em 4em 3em 4em;
+  }
+  .Card {
+    flex-basis: 15.4%;
+  }
+  .productCont .poster {
+    height: 220px;
+  }
+  .filterCont {
+    max-width: 950;
+  }
+  .gridChng .watchlistCardCont {
+    max-width: 1400px !important;
+  }
+}
